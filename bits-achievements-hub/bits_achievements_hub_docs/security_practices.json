@@ -1,0 +1,29 @@
+{
+  "Authentication": [
+    "Use bcrypt with salt rounds >= 10 for password hashing",
+    "Implement JWT with short expiration times (15-30 minutes)",
+    "Use refresh tokens for extended sessions",
+    "Validate and sanitize all user inputs",
+    "Implement rate limiting for auth endpoints"
+  ],
+  "Authorization": [
+    "Implement role-based access control (RBAC)",
+    "Verify JWT tokens on protected routes",
+    "Check user permissions before sensitive operations",
+    "Use middleware for consistent auth checks"
+  ],
+  "Data Protection": [
+    "Use HTTPS in production",
+    "Implement CORS properly",
+    "Sanitize file uploads (type, size, content)",
+    "Store sensitive data in environment variables",
+    "Use helmet.js for security headers"
+  ],
+  "File Security": [
+    "Validate file types and sizes",
+    "Store files outside web root",
+    "Generate unique file names",
+    "Scan uploaded files for malware",
+    "Implement download restrictions"
+  ]
+}

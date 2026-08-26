@@ -1,0 +1,95 @@
+{
+  "root": {
+    "package.json": "Main package.json for the entire project",
+    "README.md": "Project documentation",
+    ".gitignore": "Git ignore file",
+    ".env": "Environment variables"
+  },
+  "backend": {
+    "package.json": "Backend dependencies",
+    "server.js": "Main server file",
+    "config": {
+      "database.js": "MongoDB connection configuration",
+      "jwt.js": "JWT configuration"
+    },
+    "models": {
+      "User.js": "User schema with roles",
+      "Post.js": "Post schema with approval status",
+      "PDF.js": "PDF file schema"
+    },
+    "routes": {
+      "auth.js": "Authentication routes",
+      "users.js": "User management routes",
+      "posts.js": "Post CRUD routes",
+      "admin.js": "Admin routes"
+    },
+    "middleware": {
+      "auth.js": "JWT authentication middleware",
+      "upload.js": "Multer file upload middleware",
+      "admin.js": "Admin authorization middleware"
+    },
+    "controllers": {
+      "authController.js": "Authentication logic",
+      "postController.js": "Post management logic",
+      "userController.js": "User management logic",
+      "adminController.js": "Admin panel logic"
+    },
+    "uploads": {
+      "pdfs": "Directory for uploaded PDF files"
+    }
+  },
+  "frontend": {
+    "package.json": "Frontend React dependencies",
+    "public": {
+      "index.html": "Main HTML file",
+      "favicon.ico": "Favicon"
+    },
+    "src": {
+      "components": {
+        "Auth": {
+          "Login.js": "Login component",
+          "Register.js": "Registration component"
+        },
+        "Admin": {
+          "Dashboard.js": "Admin dashboard",
+          "UserManagement.js": "User management",
+          "PostApproval.js": "Post approval component"
+        },
+        "Posts": {
+          "PostList.js": "List of posts",
+          "PostCard.js": "Individual post card",
+          "PostUpload.js": "Post upload form",
+          "LikeDislike.js": "Like/Dislike buttons"
+        },
+        "Common": {
+          "Header.js": "Header component",
+          "Footer.js": "Footer component",
+          "Loader.js": "Loading component"
+        }
+      },
+      "pages": {
+        "Home.js": "Home page",
+        "Profile.js": "User profile page",
+        "AdminPanel.js": "Admin panel page"
+      },
+      "hooks": {
+        "useAuth.js": "Authentication hook",
+        "usePosts.js": "Posts management hook"
+      },
+      "services": {
+        "api.js": "API service functions",
+        "auth.js": "Authentication services"
+      },
+      "utils": {
+        "constants.js": "App constants",
+        "helpers.js": "Helper functions"
+      },
+      "styles": {
+        "index.css": "Global styles",
+        "components.css": "Component-specific styles"
+      },
+      "App.js": "Main App component",
+      "index.js": "React entry point"
+    }
+  }
+}
